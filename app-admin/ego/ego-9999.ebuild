@@ -37,6 +37,7 @@ src_unpack() {
 }
 
 src_install() {
+	dodir /etc/ego
 	dodir /usr/share/ego/modules
 	dodir /usr/share/ego/modules-info
 	dobin $S/ego
