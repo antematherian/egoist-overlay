@@ -37,11 +37,8 @@ src_unpack() {
 }
 
 src_install() {
-	exeinto /usr/share/ego/modules
-	doexe $S/modules/*
-	insinto /usr/share/ego/modules-info
-	doins $S/modules-info/*
+	dodir /usr/share/ego/modules
+	dodir /usr/share/ego/modules-info
 	dobin $S/ego
-	dosym ../share/ego/modules/profile.ego /usr/sbin/epro
-	doman ego.1 epro.1
+	doman ego.1
 }
