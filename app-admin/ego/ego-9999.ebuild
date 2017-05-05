@@ -22,7 +22,9 @@ LICENSE="GPL-2"
 SLOT="0"
 IUSE=""
 DEPEND=""
-RDEPEND="=dev-lang/python-3*"
+RDEPEND="=dev-lang/python-3*
+		dev-python/click
+		dev-python/pyyaml"
 
 src_unpack() {
 
