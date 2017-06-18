@@ -2,6 +2,8 @@
 
 EAPI=5
 
+inherit eutils
+
 DESCRIPTION="Funtoo's configuration tool: ego, epro."
 HOMEPAGE="http://www.funtoo.org/Package:Ego"
 
