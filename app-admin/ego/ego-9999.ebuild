@@ -5,13 +5,13 @@ EAPI=5
 DESCRIPTION="Funtoo's configuration tool: ego, epro."
 HOMEPAGE="http://www.funtoo.org/Package:Ego"
 
-GITHUB_REPO="$PN"
-GITHUB_USER="funtoo"
+GITHUB_REPO="$PN-2"
+GITHUB_USER="antematherian"
 GITHUB_TAG="${PV}"
 
 if [ ${PV} == "9999" ] ; then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/antematherian/${PN}.git"
+	EGIT_REPO_URI="https://github.com/antematherian/${PN}-2.git"
 else
 	SRC_URI="https://www.github.com/${GITHUB_USER}/${GITHUB_REPO}/tarball/${GITHUB_TAG} -> ${PN}-${GITHUB_TAG}.tar.gz"
 	RESTRICT="mirror"
